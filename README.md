@@ -111,22 +111,38 @@ MAIL_FROM_NAME="Project Management System"
 
 ## API Endpoints
 
+1. **Authentication**
+
 ```bash
 POST            api/v1/auth/login
 POST            api/v1/auth/logout
 POST            api/v1/auth/register 
 GET             api/v1/me 
+```
+
+2. **Project**
+```bash
 GET             api/v1/project/tasks/{projectId}
 GET             api/v1/projects 
 POST            api/v1/projects 
 GET             api/v1/projects/{project}
 PUT             api/v1/projects/{project}
 DELETE          api/v1/projects/{project}
+```
+
+3. **Task**
+
+```bash
 POST            api/v1/tasks 
-POST            api/v1/tasks/comments
-GET             api/v1/tasks/comments/{taskId}
 DELETE          api/v1/tasks/{id}
 PATCH           api/v1/tasks/{id}
 GET             api/v1/tasks/{id}
 PUT             api/v1/tasks/{id}
+```
+
+4. **Comment**
+
+```bash
+POST            api/v1/tasks/comments
+GET             api/v1/tasks/comments/{taskId}
 ```
